@@ -3018,15 +3018,18 @@
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			border-color: #ebe680;
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
+			border-color: #9ed37a	;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #843840;
+		}
+		.spotlight.style4 .content {
+			border-color: #4cc4f1;
 		}
 
 		.spotlight.inactive .content {
