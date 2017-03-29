@@ -1615,8 +1615,7 @@
 
 
 	h1.title{
-		font-size: 3em;
-		line-height: 0em;
+		font-size: 2.5em;
 
 	}
 	h2 {
@@ -2497,7 +2496,6 @@
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
 		}
 
 			.image.fit img {
@@ -2505,7 +2503,7 @@
 			}
 
 		.poster{
-			width: 40% !important;
+			width: 80vw !important;
 			margin: auto;
 		}
 
