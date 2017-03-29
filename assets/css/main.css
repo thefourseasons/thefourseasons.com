@@ -1613,6 +1613,12 @@
 			border: 0;
 		}
 
+
+	h1.title{
+		font-size: 3em;
+		line-height: 0em;
+
+	}
 	h2 {
 		font-size: 2em;
 		line-height: 1.5em;
@@ -2497,6 +2503,11 @@
 			.image.fit img {
 				width: 100%;
 			}
+
+		.poster{
+			width: 40% !important;
+			margin: auto;
+		}
 
 /* List */
 
