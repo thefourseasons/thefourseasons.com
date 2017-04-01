@@ -38,7 +38,7 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
+				<!-- <header id="header">
 					<h1 id="logo"><a href="index.html">The Four Seasons</a></h1>
 					<nav id="nav">
 						<ul>
@@ -49,7 +49,8 @@
 							<li><a href="media">Media</a></li>
 						</ul>
 					</nav>
-				</header>
+				</header> -->
+				<div id="header"></div>
 
 			<!-- Banner -->
 				<section id="banner">
@@ -64,9 +65,10 @@
 
 			<!-- One -->
 			<!-- Upcoming Event Section -->
-				<section id="one" class="spotlight style1 bottom">
+				<section id="one" class="spotlight  style1 bottom">
 					<!-- TODO: Replace with upcoming event image -->
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+
 					<div class="content">
 						<div class="container">
 
@@ -91,6 +93,7 @@
 						</div>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
+
 				</section>
 
 			<!-- Two -->
@@ -98,12 +101,10 @@
 					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Page with Season 1 Photo</h2>
-							<p>Random Description</p>
+							<h2>What's Next</h2>
 						</header>
-						<p>blah blah blah</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="#" class="button">Details</a></li>
 						</ul>
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
@@ -114,12 +115,11 @@
 					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Page with Season 2 Photo</h2>
-							<p>Random Description</p>
+							<h2>What have been we upto</h2>
+							<p>Check it out</p>
 						</header>
-						<p>blah blah blah</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="/events.html" class="button">Events</a></li>
 						</ul>
 					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
@@ -129,10 +129,8 @@
 						<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
 						<div class="content">
 							<header>
-								<h2>Page with Season 3 Photo</h2>
-								<p>Random Description</p>
+								<h2>Idea Behind The Four Seasons</h2>
 							</header>
-							<p>blah blah blah</p>
 							<ul class="actions">
 								<li><a href="#" class="button">Learn More</a></li>
 							</ul>
@@ -168,7 +166,6 @@
 					<div class="container">
 						<header class="major">
 							<h2>The Team</h2>
-							<p>Random quote about the team</p>
 						</header>
 						<div class="box alt">
 							<div class="row uniform">
@@ -181,6 +178,11 @@
 									<span class="icon alt major"><img src="assets/media/def_user.svg" alt="" /></span>
 									<h3>Mohsin Khursheed</h3>
 									<p>CEO</p>
+								</section>
+								<section class="4u 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major"><img src="assets/media/def_user.svg" alt="" /></span>
+									<h3>Noman Baba</h3>
+									<p>CFO</p>
 								</section>
 								<section class="4u 6u(medium) 12u$(xsmall)">
 									<span class="icon alt major"><img src="assets/media/def_user.svg" alt="" /></span>
@@ -209,7 +211,7 @@
 				</section>
 
 			<!-- Footer -->
-				<footer id="footer">
+				<!-- <footer id="footer">
 					<ul class="icons">
 						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
@@ -221,8 +223,8 @@
 					<ul class="copyright">
 						<li>&copy; The Four Season's. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Maintained by: <a href="http://hackesta.org">Hack-e-Sta</a></li>
 					</ul>
-				</footer>
-
+				</footer> -->
+				<div id="footer"></div>
 		</div>
 
 		<!-- Scripts -->
@@ -234,6 +236,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<!--Load Header & Footer -->
+			<script>
+			$(function(){
+	      $("#header").load("/header.html");
+				$("#footer").load("/footer.html");
+	    });
+			</script>
 
 	</body>
 </html>
