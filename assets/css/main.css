@@ -4050,6 +4050,9 @@
   margin-bottom: 1em;
 }
 	/* Sponsors */
+  .sponsor a{
+    border-bottom: none;
+  }
   .sponsor{
     text-align: center;
   }
