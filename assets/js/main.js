@@ -28,6 +28,36 @@
 				}, 0);
 			});
 
+			$("#header").load("/header.html", function(data){
+				$(
+					'<div id="titleBar">' +
+						'<a href="#navPanel" class="toggle"></a>' +
+						'<span class="title">' + "The Four Seasons" + '</span>' +
+					'</div>'
+				)
+					.appendTo($body);
+
+			// Navigation Panel.
+				$(
+					'<div id="navPanel">' +
+						'<nav>' +
+							$('#nav').navList() +
+						'</nav>' +
+					'</div>'
+				)
+					.appendTo($body)
+					.panel({
+						delay: 500,
+						hideOnClick: true,
+						hideOnSwipe: true,
+						resetScroll: true,
+						resetForms: true,
+						side: 'left',
+						target: $body,
+						visibleClass: 'navPanel-visible'
+					});
+			});
+
 		// Touch mode.
 			if (skel.vars.mobile)
 				$body.addClass('is-touch');
@@ -57,34 +87,33 @@
 		// Off-Canvas Navigation.
 
 			// Title Bar.
-				$(
-					'<div id="titleBar">' +
-						'<a href="#navPanel" class="toggle"></a>' +
-						'<span class="title">' + "The Four Seasons" + '</span>' +
-					'</div>'
-				)
-					.appendTo($body);
-
-			// Navigation Panel.
-				$(
-					'<div id="navPanel">' +
-						'<nav>' +
-							$('#nav').navList() +
-						'</nav>' +
-					'</div>'
-				)
-					.appendTo($body)
-					.panel({
-						delay: 500,
-						hideOnClick: true,
-						hideOnSwipe: true,
-						resetScroll: true,
-						resetForms: true,
-						side: 'left',
-						target: $body,
-						visibleClass: 'navPanel-visible'
-					});
-
+			// 	$(
+			// 		'<div id="titleBar">' +
+			// 			'<a href="#navPanel" class="toggle"></a>' +
+			// 			'<span class="title">' + "The Four Seasons" + '</span>' +
+			// 		'</div>'
+			// 	)
+			// 		.appendTo($body);
+			//
+			// // Navigation Panel.
+			// 	$(
+			// 		'<div id="navPanel">' +
+			// 			'<nav>' +
+			// 				$('#nav').navList() +
+			// 			'</nav>' +
+			// 		'</div>'
+			// 	)
+			// 		.appendTo($body)
+			// 		.panel({
+			// 			delay: 500,
+			// 			hideOnClick: true,
+			// 			hideOnSwipe: true,
+			// 			resetScroll: true,
+			// 			resetForms: true,
+			// 			side: 'left',
+			// 			target: $body,
+			// 			visibleClass: 'navPanel-visible'
+			// 		});
 			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#titleBar, #navPanel, #page-wrapper')
