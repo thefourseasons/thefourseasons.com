@@ -2667,11 +2667,11 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 }
 
 .spotlight.season2 .content {
-    border-color: #f36c10;
+    border-color: #a6d579;
 }
 
 .spotlight.season3 .content {
-    border-color: #05659f;
+    border-color: rgb(252, 32, 32);
 }
 
 .spotlight.season4 .content {
