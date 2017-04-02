@@ -4026,10 +4026,13 @@
 
 	}
 
+#sponsors p {
+  margin-bottom: 1em;
+}
 	/* Sponsors */
-	#sponsors {
-	
-	}
+  .sponsor{
+    text-align: center;
+  }
 	.sponsor img{
 		width: 50%;
 	}
