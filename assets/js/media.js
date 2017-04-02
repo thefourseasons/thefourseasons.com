@@ -36,7 +36,7 @@ var loadData = function loadData(json){
           html = "<div class=\"4u  6u(xsmall)\" onclick=\"openGallery('"+field.link+"')\"><span class=\"image fit\"><img src=\""+ field.thumbnail+"\" alt=\""+ field.title+"\" /><p class=\""+pClass+"\">"+field.title+"</p></span></div>"
           }
           else if(field.image){
-            html = "<div class=\"4u  6u(xsmall)\"><a href=\""+field.image+"\" data-lightbox=\""+getUrlParameter('gallery')+"\"><span><img src=\""+ field.thumbnail+"\" alt=\""+ field.title+"\" style=\"border-radius: 4px;display: block; margin: auto;\"/></span></a></div>"
+            html = "<div class=\"4u  6u(xsmall)\"><a href=\""+field.image+"\" data-lightbox=\""+getUrlParameter('gallery')+"\"><span class=\"image fit\"><img src=\""+ field.thumbnail+"\" alt=\""+ field.title+"\" style=\"border-radius: 8px;display: block; margin: auto;\"/></span></a></div>"
           }
             $("#images").append(html)
 
