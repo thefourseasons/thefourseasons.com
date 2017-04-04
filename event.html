@@ -11,10 +11,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/remodal.css">
+		<link rel="stylesheet" href="assets/css/remodal-default-theme.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=898852280214428";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="remodal" data-remodal-id="modal">
+		  <button data-remodal-action="close" class="remodal-close"></button>
+	 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScYk0lDHx4HbmuMknPhSQp51nNvaIb2wItNbQm1sPZqUlK4uQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -50,9 +64,23 @@
 									 An overall packet of culture music comedy and magic. Stay tuned for more info we sure will keep you posted!
 								</p>
 								<br />
-								<p style="text-align:left;"><b>Venue:</b> SKICC</p>
-									<p>
-								<b>May 2017</b></p>
+
+
+								<div class="row uniform">
+									<section class="6u 6u(medium) 12u$(xsmall)">
+
+										<p><b>Venue:</b> SKICC</p>
+										<p>
+											<b>May 2017</b></p>
+									</section>
+									<section class="6u 6u(medium) 12u$(xsmall)">
+
+										<h3><b>Are you coming?</b></h3>
+										<ul class="actions">
+											<li><a href="#modal" class="button">Tell Us Here</a></li>
+										</ul>
+									</section>
+								</div>
 								</div>
 							</section>
 
@@ -84,6 +112,8 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/remodal.min.js"></script>
+
 			<script src="assets/js/main.js"></script>
 			<!--Load Header & Footer -->
 
