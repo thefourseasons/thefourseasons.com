@@ -3173,6 +3173,9 @@ body.is-touch #banner {
         top: auto !important;
         width: 100% !important;
     }
+    .spotlight .content header{
+      margin-top: inherit !important;
+    }
     .spotlight .goto-next {
         display: none;
     }
@@ -3206,7 +3209,7 @@ body.is-touch #banner {
     .poster{
       width: 80vw !important;
       margin: auto;
-    }  
+    }
 }
 
 
