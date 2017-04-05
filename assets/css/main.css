@@ -3551,3 +3551,33 @@ body.is-touch #banner {
 .sponsor img {
     width: 50%;
 }
+
+/* Custom Animations */
+.Animate1In {
+    opacity: 1;
+    -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
+    animation-delay: 4s;
+    animation: animate1In 6s linear;
+}
+.Animate2In {
+  opacity: 1;
+  -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
+  animation-delay: 4s;
+  animation: animate2In 6s linear;
+
+}
+
+
+@keyframes animate1In {
+  0%  { opacity: 0; margin-top: 100%; }
+  25% { opacity: 1; margin-top: 100%; }
+  50% {opacity: 0; margin-top: 100%;}
+  51% {margin-top: inherit;}
+  100% { opacity: 1;}
+}
+
+@keyframes animate2In {
+  0% { opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}

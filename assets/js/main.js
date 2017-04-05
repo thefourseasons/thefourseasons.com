@@ -236,13 +236,13 @@
 										mode:		mode,
 										top:		top,
 										bottom:		bottom,
-										initialize:	function(t) { $this.addClass('inactive'); },
-										terminate:	function(t) { $this.removeClass('inactive'); },
-										enter:		function(t) { $this.removeClass('inactive'); },
+										initialize:	function(t) { $this.addClass('inactive'); $this.find(".toAnimate").find("#first").removeClass("Animate1In");  $this.find(".toAnimate").find("#second").removeClass("Animate2In");},
+										terminate:	function(t) { $this.removeClass('inactive'); $this.find(".toAnimate").find("#first").addClass("Animate1In");$this.find(".toAnimate").find("#second").addClass("Animate2In");},
+										enter:		function(t) { $this.removeClass('inactive');  $this.find(".toAnimate").find("#first").addClass("Animate1In");$this.find(".toAnimate").find("#second").addClass("Animate2In");},
 
 										// Uncomment the line below to "rewind" when this spotlight scrolls out of view.
 
-										leave:	function(t) { $this.addClass('inactive'); },
+										leave:	function(t) { $this.addClass('inactive'); $this.find(".toAnimate").find("#first").removeClass("Animate1In");$this.find(".toAnimate").find("#second").removeClass("Animate2In");},
 
 									});
 
