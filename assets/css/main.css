@@ -3544,6 +3544,7 @@ body.is-touch #banner {
     border-bottom: none;
 }
 
+
 .sponsor {
     text-align: center;
 }
@@ -3551,7 +3552,6 @@ body.is-touch #banner {
 .sponsor img {
     width: 50%;
 }
-
 
 /* Custom Animations */
 .Animate1In {
@@ -3566,8 +3566,35 @@ body.is-touch #banner {
   animation-delay: 4s;
   animation: animate2In 6s linear;
 
+
+}
+.spotlight.noPar {
+    box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+    background-attachment: scroll;
+    height: auto;
+}
+.spotlight.noPar .image.main {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+.spotlight.noPar .content {
+    background-color: #1c1d26;
+    border-width: 0 !important;
+    border-top-width: 0.35em !important;
+    bottom: auto !important;
+    left: auto !important;
+    padding: 4.5em 2.5em 2.5em 2.5em !important;
+    position: relative;
+    right: auto !important;
+    text-align: center;
+    top: auto !important;
+    width: 100% !important;
 }
 
+.spotlight.noPar .content header{
+  margin-top: inherit !important;
+}
 
 @keyframes animate1In {
   0%  { opacity: 0; margin-top: 40vh; }

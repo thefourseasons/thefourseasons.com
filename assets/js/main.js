@@ -136,8 +136,8 @@
 				$.fn._parallax = function() {
 
 					$(this).each(function() {
-
-						var $this = $(this),
+						if(!$(this).hasClass('noPar'))
+						{var $this = $(this),
 							on, off;
 
 						on = function() {
@@ -174,7 +174,7 @@
 								(on)();
 
 						});
-
+}
 					});
 
 					return $(this);
@@ -194,13 +194,14 @@
 			$spotlights
 				._parallax()
 				.each(function() {
-
+					if(!$(this).hasClass('noPar')){
 					var $this = $(this),
 						on, off;
 
 					on = function() {
 
 						// Use main <img>'s src as this spotlight's background.
+
 							$this.css('background-image', 'url("' + $this.find('.image.main > img').attr('src') + '")');
 
 						// Enable transitions (if supported).
@@ -273,8 +274,9 @@
 							(on)();
 
 					});
-
+}
 				});
+
 
 		// Wrappers.
 			var $wrappers = $('.wrapper');
