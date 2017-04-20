@@ -2317,6 +2317,7 @@ table tbody tr:nth-child(2n+1) {
 
 table td {
     padding: 0.75em 0.75em;
+    border-radius: 10px;
 }
 
 table th {
