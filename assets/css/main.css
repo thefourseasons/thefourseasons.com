@@ -2357,6 +2357,7 @@ table.alt tbody tr td {
     border-bottom-right-radius: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    text-align: center;
 }
 table.alt tbody tr td:first-child {
     border-left-width: 1px;
@@ -2379,7 +2380,14 @@ table.alt tbody tr td:last-child {
 table.alt tbody tr:first-child td {
     border-top-width: 1px;
 }
-
+table.alt tbody tr td img {
+  width:35%;
+}
+table.alt tbody tr td a:link {
+    color: #fff !important;
+    border-bottom: none;
+    font-size: 2em;
+}
 table.alt thead {
     border-bottom: 0;
 }
