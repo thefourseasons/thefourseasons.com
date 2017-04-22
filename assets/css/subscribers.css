@@ -1,0 +1,28 @@
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+#mc_embed_signup .mc-field-group {
+  width: 50%;
+  padding-bottom: 0%:;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mc_embed_signup form {
+
+background-color: #E44C65;
+}
+#mc_embed_signup .clear {
+text-align: right;
+}
+#mc_embed_signup #mc-embedded-subscribe-form input {
+border: 2px solid #fff;
+color: #ffffff;
+}
+#mc_embed_signup .button {
+background-color: #fff;
+color: #000000 !important;
+}
+#mc_embed_signup .button:hover {
+color: #ffffff !important;
+}
+#mc_embed_signup #mce-success-response {
+color: #ffffff;
+}
