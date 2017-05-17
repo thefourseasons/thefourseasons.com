@@ -3,7 +3,7 @@ var submitForm = function(){
   if(validateForm())
   {
     $.ajax({
-      url: 'http://localhost:8000/workwithus/volunteer',
+      url: 'http://fourseasons.pythonanywhere.com/workwithus/volunteer',
       type: 'POST',
       crossDomain: true,
       data: new FormData($("form")[0]),
