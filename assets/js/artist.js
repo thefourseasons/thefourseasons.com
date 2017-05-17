@@ -18,7 +18,7 @@ $(function() {
 var submitForm = function(){
   
   $.ajax({
-    url: 'http://127.0.0.1:8000/workwithus/artist',
+    url: 'http://fourseasons.pythonanywhere.com/workwithus/artist',
     type: 'POST',
     crossDomain: true,
     data: new FormData($("form")[0]),
