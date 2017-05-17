@@ -2,7 +2,7 @@
 var submitForm = function(){
 
   $.ajax({
-    url: 'http://fourseasons.pythonanywhere.com/workwithus/volunteer',
+    url: 'http://localhost:8000/workwithus/volunteer',
     type: 'POST',
     crossDomain: true,
     data: new FormData($("form")[0]),
