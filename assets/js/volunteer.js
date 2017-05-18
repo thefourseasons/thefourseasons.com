@@ -17,12 +17,14 @@ var submitForm = function(){
             
             $("#register").css('display', 'none');
             showMessage("You have successfully registered as a Volunteer");
-
           });
           
         },
       error: function(json){
-        showMessage("Registration Failed");
+        if(json.responseJSON === "ALREADY REGISTERED"){
+          showMessage("A registration with same details has already been done");          
+        }
+        else showMessage("Registration Failed");
       }
     });
     showMessage('Registering...');
