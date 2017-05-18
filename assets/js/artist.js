@@ -17,7 +17,6 @@ $(function() {
      });
  });
 var submitForm = function(){
-  console.log("submit");
   if(validateForm($("form")[0])){
         $.ajax({
           url: 'http://fourseasons.pythonanywhere.com/workwithus/artist',
@@ -29,8 +28,13 @@ var submitForm = function(){
           processData: false,
           dataType: 'json',
           success: function(json) {
-              showMessage("You have successfully registered as an Artist");
-            },
+            $("#register").addClass("animated bounceOutUp");
+              $("#register").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                
+                $("#register").css('display', 'none');
+                showMessage("You have successfully registered as an Artist");
+
+              });            },
           error: function(json){
             showMessage("Registration Failed");
           }

@@ -12,7 +12,14 @@ var submitForm = function(){
       processData: false,
       dataType: 'json',
       success: function(json) {
-          showMessage("You have successfully registered as a Volunteer");
+        $("#register").addClass("animated bounceOutUp");
+          $("#register").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            
+            $("#register").css('display', 'none');
+            showMessage("You have successfully registered as a Volunteer");
+
+          });
+          
         },
       error: function(json){
         showMessage("Registration Failed");
