@@ -7,7 +7,7 @@ $(function() {
       if(valueSelected != '-1') {
         $('#artist_type option[value="-1"]').remove();
       }
-      if(valueSelected === 'other'){
+      if(valueSelected === 'Other'){
         $("#specify_other").css('display', 'block');
         $("#artist_type_other").prop('required', true);
       }
