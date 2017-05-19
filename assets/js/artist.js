@@ -34,7 +34,8 @@ var submitForm = function(){
                 $("#register").css('display', 'none');
                 showMessage("You have successfully registered as an Artist");
 
-              });            },
+              });            
+            },
           error: function(json){
             if(json.responseJSON === "ALREADY REGISTERED"){
               showMessage("A registration with same details has already been done");          
