@@ -53,7 +53,7 @@ var showError = function(message){
   $message.html(message);
 };
 var showPackageInfo =function(){
-  $package = $("#package")[0].value;
+  $package = $("#package_type")[0].value;
   if($package === '-1') showError('Choose a package to view its info');
   else{
     var win = window.open('packages.html?package=' + $package, '_blank');

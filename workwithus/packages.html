@@ -188,6 +188,106 @@
 									<li>1 ticket to the V.I.P area.</li>
 								</ul>
 							</div>
+							<div id="beverage" style="display: none;">
+								<h3>Sponsorship Amount- Beverage Charges</h3>
+								<h3 style="text-align: left;">Features: </h3>
+								<ul style="text-align: left;">
+									<li>Promotional opportunities to build brand awareness and loyalty through presence on
+										<ul>
+											<li>Banners</li>
+											<li>Invitations</li>
+											<li>Radio jingles </li>
+											<li>Allowance of 1 stall for business purposes.</li>
+											<li>Posters</li>
+											<li>Paperback Distribution </li>
+											<li>Special Vote of thanks to the sponsor in the grand ceremony & repeated mention of the sponsor throughout.</li>
+											<li>Online Promotion on social media.</li>
+											<li>Colored logo on certificates and momentous.</li>
+											<li>Newspaper Coverage as ''Sponsored By'' title.</li>
+										</ul>
+									</li>
+									<li>Logo placement on all publicity material.</li>
+									<li>Media coverage will be given on television. </li>
+									<li>Branding space on the newspapers</li>
+									<li>Memento to be presented to the company representative during the grand ceremony. </li>
+									<li>1 ticket to the V.I.P area.</li>
+								</ul>
+							</div>
+							<div id="print_media" style="display: none;">
+								<h3>Sponsorship Amount- Print Media Charges</h3>
+								<h3 style="text-align: left;">Features: </h3>
+								<ul style="text-align: left;">
+									<li>Promotional opportunities to build brand awareness and loyalty through presence on
+										<ul>
+											<li>Banners</li>
+											<li>Invitations</li>
+											<li>Radio jingles </li>
+											<li>Allowance of 1 stall for business purposes.</li>
+											<li>Posters</li>
+											<li>Paperback Distribution </li>
+											<li>Special Vote of thanks to the sponsor in the grand ceremony & repeated mention of the sponsor throughout.</li>
+											<li>Online Promotion on social media.</li>
+											<li>Colored logo on certificates and momentous.</li>
+											<li>Newspaper Coverage as ''Sponsored By'' title.</li>
+										</ul>
+									</li>
+									<li>Logo placement on all publicity material.</li>
+									<li>Media coverage will be given on television. </li>
+									<li>Branding space on the newspapers</li>
+									<li>Memento to be presented to the company representative during the grand ceremony. </li>
+									<li>1 ticket to the V.I.P area.</li>
+								</ul>
+							</div>
+							<div id="advertising" style="display: none;">
+								<h3>Sponsorship Amount- Advertising Charges</h3>
+								<h3 style="text-align: left;">Features: </h3>
+								<ul style="text-align: left;">
+									<li>Promotional opportunities to build brand awareness and loyalty through presence on
+										<ul>
+											<li>Banners</li>
+											<li>Invitations</li>
+											<li>Radio jingles </li>
+											<li>Allowance of 1 stall for business purposes.</li>
+											<li>Posters</li>
+											<li>Paperback Distribution </li>
+											<li>Special Vote of thanks to the sponsor in the grand ceremony & repeated mention of the sponsor throughout.</li>
+											<li>Online Promotion on social media.</li>
+											<li>Colored logo on certificates and momentous.</li>
+											<li>Newspaper Coverage as ''Sponsored By'' title.</li>
+										</ul>
+									</li>
+									<li>Logo placement on all publicity material.</li>
+									<li>Media coverage will be given on television. </li>
+									<li>Branding space on the newspapers</li>
+									<li>Memento to be presented to the company representative during the grand ceremony. </li>
+									<li>1 ticket to the V.I.P area.</li>
+								</ul>
+							</div>
+							<div id="radio" style="display: none;">
+								<h3>Sponsorship Amount- Radio Charges</h3>
+								<h3 style="text-align: left;">Features: </h3>
+								<ul style="text-align: left;">
+									<li>Promotional opportunities to build brand awareness and loyalty through presence on
+										<ul>
+											<li>Banners</li>
+											<li>Invitations</li>
+											<li>Radio jingles </li>
+											<li>Allowance of 1 stall for business purposes.</li>
+											<li>Posters</li>
+											<li>Paperback Distribution </li>
+											<li>Special Vote of thanks to the sponsor in the grand ceremony & repeated mention of the sponsor throughout.</li>
+											<li>Online Promotion on social media.</li>
+											<li>Colored logo on certificates and momentous.</li>
+											<li>Newspaper Coverage as ''Sponsored By'' title.</li>
+										</ul>
+									</li>
+									<li>Logo placement on all publicity material.</li>
+									<li>Media coverage will be given on television. </li>
+									<li>Branding space on the newspapers</li>
+									<li>Memento to be presented to the company representative during the grand ceremony. </li>
+									<li>1 ticket to the V.I.P area.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -237,7 +337,7 @@
 		$package = getUrlParameter('package').toLowerCase();;
 		if($package !== '' || $package !== undefined)
 		{
-			$id= "#" + $package;
+			$id= "#" + $package.replace(' ', '_');
 			$($id).css('display','block');	
 			$("#package_details").append($package.toProperCase());		
 		}
