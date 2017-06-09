@@ -5,7 +5,7 @@
 */
 
 (function($) {
-
+	
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
@@ -29,6 +29,11 @@
 			});
 
 			$("#header").load("/header.html", function(data){
+				
+				if(getUrlParameter('app') === 'true'){
+					$("#nav").append('<li><a href="/app/about.html">About</a></li>');
+
+				}
 				$(
 					'<div id="titleBar">' +
 						'<a href="#navPanel" class="toggle"></a>' +
@@ -56,6 +61,7 @@
 						target: $body,
 						visibleClass: 'navPanel-visible'
 					});
+					
 			});
 
 		// Touch mode.
