@@ -1,7 +1,7 @@
 $(document).ready(function(){
   if(getUrlParameter('gallery') === undefined){
     $.ajax({
-      url: 'http://fourseasons.pythonanywhere.com/media/?format=json',
+      url: 'https://fourseasons.pythonanywhere.com/media/?format=json',
       type: 'GET',
       crossDomain: true,
       dataType: 'json',
@@ -24,7 +24,7 @@ $(document).ready(function(){
   }
   else{
     $.ajax({
-      url: 'http://fourseasons.pythonanywhere.com/media/?format=json&event='+getUrlParameter('gallery'),
+      url: 'https://fourseasons.pythonanywhere.com/media/?format=json&event='+getUrlParameter('gallery'),
       type: 'GET',
       crossDomain: true,
       dataType: 'json',

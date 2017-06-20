@@ -19,7 +19,7 @@ $(function() {
 var submitForm = function(){
   if(validateForm($("form")[0])){
         $.ajax({
-          url: 'http://fourseasons.pythonanywhere.com/workwithus/artist',
+          url: 'https://fourseasons.pythonanywhere.com/workwithus/artist',
           type: 'POST',
           crossDomain: true,
           data: new FormData($("form")[0]),

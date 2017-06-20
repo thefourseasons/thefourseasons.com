@@ -3,7 +3,7 @@ var submitForm = function(){
   if(validateForm())
   {
     $.ajax({
-      url: 'http://fourseasons.pythonanywhere.com/workwithus/sponsor',
+      url: 'https://fourseasons.pythonanywhere.com/workwithus/sponsor',
       type: 'POST',
       crossDomain: true,
       data: new FormData($("form")[0]),

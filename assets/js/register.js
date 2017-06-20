@@ -4,7 +4,7 @@ loadDetails();
 
 function loadDetails(){
   $.ajax({
-    url: 'http://fourseasons.pythonanywhere.com/events/?format=json',
+    url: 'https://fourseasons.pythonanywhere.com/events/?format=json',
     type: 'GET',
     crossDomain: true,
     dataType: 'json',
@@ -35,7 +35,7 @@ function sendRegistration(form){
   regData = JSON.stringify(regData);
   console.log(regData);
   $.ajax({
-    url: 'http://fourseasons.pythonanywhere.com/tickets',
+    url: 'https://fourseasons.pythonanywhere.com/tickets',
     type: 'POST',
     crossDomain: true,
     data: regData,
