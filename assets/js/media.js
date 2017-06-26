@@ -18,6 +18,8 @@ $(document).ready(function(){
         
           
             $("#horizontal").append(html);
+            $("#loader").css('display', 'none');
+
         });
       }
     });
@@ -40,6 +42,8 @@ $(document).ready(function(){
             $("#vertical").append(html);
           }
         });
+        $("#loader").css('display', 'none');
+        
       }
     });
   }
@@ -61,8 +65,9 @@ $(window).resize(function() {
 });
 
 var openGallery = function openGallery(gallery){
+  $("#loader").css('display', 'block');
 window.location.href = "?gallery="+gallery;
-}
+};
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
