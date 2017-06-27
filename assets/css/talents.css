@@ -1,0 +1,37 @@
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.social a {
+  background: rgba(255, 255, 255, 0.075);
+width: 36px;
+height: 36px;
+display: inline-block;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+color: #fff;
+text-align: center;
+border-bottom: none;
+}
+
+section h3{
+margin: 0 !important; 
+}
+section p{
+  margin-bottom: 1em !important;
+}
+.avatar {
+  border-color: #e44c65 !important;
+}
