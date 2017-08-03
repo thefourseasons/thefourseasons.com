@@ -3535,7 +3535,10 @@ body.is-touch #banner {
     }
     /* Spotlight */
     .spotlight .image.main {
-        max-height: 50vh;
+        max-height: unset;
+    }
+    .spotlight .image.main img {
+        width: 100% !important;
     }
     .spotlight .content {
         padding: 3em 1.25em 1em 1.25em !important;
